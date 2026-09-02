@@ -1,0 +1,39 @@
+<section class="hero">
+  <div class="wrap hero-inner">
+    <h1 class="title">Pisa fuerte,<br>elige <span>Drip Shoes</span></h1>
+    <p class="sub">Zapatillas para hombres, mujeres y niños. Los modelos más buscados, en un solo lugar.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="video-banner">
+    <div class="play-badge"><span class="play-dot"></span> En vivo</div>
+    <div class="scene">
+      <div class="glow"></div>
+      <div class="shoe">👟</div>
+    </div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>NUEVA COLECCIÓN 2026</span><span>ENVÍO GRATIS DESDE S/ 199</span><span>HOMBRES · MUJERES · NIÑOS</span>
+        <span>NUEVA COLECCIÓN 2026</span><span>ENVÍO GRATIS DESDE S/ 199</span><span>HOMBRES · MUJERES · NIÑOS</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="section-label">Destacados de la semana</div>
+  <div class="grid">
+    @for (z of destacados; track z.id) {
+      <div class="card">
+        <div class="thumb">{{ z.emoji }}</div>
+        <div class="brand">{{ z.marca }}</div>
+        <div class="name">{{ z.nombre }}</div>
+        <div class="meta">
+          <span class="price">S/ {{ z.precio }}</span>
+          <span class="size">Tallas {{ z.talla }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</main>

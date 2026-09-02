@@ -1,0 +1,21 @@
+<section class="cat-banner wrap">
+  <h1 class="title">Línea <span>Hombre</span></h1>
+  <div class="cat-count">{{ productos.length }} productos</div>
+</section>
+
+<main class="wrap">
+  <div class="section-label">Todos los modelos</div>
+  <div class="grid">
+    @for (z of productos; track z.id) {
+      <div class="card">
+        <div class="thumb">{{ z.emoji }}</div>
+        <div class="brand">{{ z.marca }}</div>
+        <div class="name">{{ z.nombre }}</div>
+        <div class="meta">
+          <span class="price">S/ {{ z.precio }}</span>
+          <span class="size">Tallas {{ z.talla }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</main>
